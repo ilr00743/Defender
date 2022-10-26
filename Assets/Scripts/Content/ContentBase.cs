@@ -2,7 +2,7 @@
 using Zenject;
 
 namespace FallingBalls.Content {
-    public class ContentBase : MonoBehaviour, IInitializable {
+    public abstract class ContentBase : MonoBehaviour, IInitializable {
         [Inject] protected SignalBus SignalBus;
         private CanvasGroup _canvasGroup;
 

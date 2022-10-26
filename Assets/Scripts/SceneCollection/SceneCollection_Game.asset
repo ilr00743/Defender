@@ -15,4 +15,4 @@ MonoBehaviour:
   _collectionKey: Game
   _scene:
     m_SceneName: Game
-  _parentCollectionKey: 
+  _parentCollectionKey: Bootloader

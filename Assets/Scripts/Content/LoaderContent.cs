@@ -11,7 +11,7 @@ namespace FallingBalls.Content {
 
         private void RefreshLoader(SignalOnLoadingScene signal) {
             switch (signal.LoadingType) {
-                case LoadingType.None: 
+                case LoadingType.None:
                     HideContent();
                     break;
                 case LoadingType.Splash:

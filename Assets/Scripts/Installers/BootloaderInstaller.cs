@@ -3,7 +3,7 @@ using UnityEngine;
 using Zenject;
 
 namespace FallingBalls.Installers {
-    public class LoaderInstaller : MonoInstaller {
+    public class BootloaderInstaller : MonoInstaller {
         [SerializeField] private LoaderContent _loaderContent;
 
         public override void InstallBindings() {
