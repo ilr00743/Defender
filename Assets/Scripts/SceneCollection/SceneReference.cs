@@ -3,12 +3,12 @@
 using UnityEditor;
 #endif
 
-namespace FallingBalls.SceneCollection {
+namespace FallingBalls.SceneCollection
+{
     [System.Serializable]
     public class SceneReference
     {
-        [SerializeField]
-        private string m_SceneName;
+        [SerializeField] private string m_SceneName;
 
         public static implicit operator string(SceneReference sceneReference)
         {
@@ -39,7 +39,8 @@ namespace FallingBalls.SceneCollection {
                 }
             }
 
-            Debug.Log("Scene [" + sceneObjectName + "] cannot be used. Add this scene to the 'Scenes in the Build' in the build settings.");
+            Debug.Log("Scene [" + sceneObjectName +
+                      "] cannot be used. Add this scene to the 'Scenes in the Build' in the build settings.");
             return null;
         }
 
@@ -59,7 +60,8 @@ namespace FallingBalls.SceneCollection {
                     var scnObj = GetSceneObject(newScene.name);
                     if (scnObj == null)
                     {
-                        Debug.LogWarning("The scene " + newScene.name + " cannot be used. To use this scene add it to the build settings for the project.");
+                        Debug.LogWarning("The scene " + newScene.name +
+                                         " cannot be used. To use this scene add it to the build settings for the project.");
                     }
                     else
                     {

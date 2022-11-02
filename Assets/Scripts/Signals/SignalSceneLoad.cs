@@ -1,8 +1,11 @@
-﻿namespace FallingBalls.Signals {
-    public class SignalSceneLoad {
+﻿namespace FallingBalls.Signals
+{
+    public class SignalSceneLoad
+    {
         public readonly string SceneName;
 
-        public SignalSceneLoad(string sceneName) {
+        public SignalSceneLoad(string sceneName)
+        {
             SceneName = sceneName;
         }
     }

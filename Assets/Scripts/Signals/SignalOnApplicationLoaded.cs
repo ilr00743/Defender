@@ -1,5 +1,6 @@
-﻿namespace FallingBalls.Signals {
-    public class SignalOnApplicationLoaded {
-        
+﻿namespace FallingBalls.Signals
+{
+    public class SignalOnApplicationLoaded
+    {
     }
 }

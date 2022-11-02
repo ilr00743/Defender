@@ -1,5 +1,7 @@
-namespace FallingBalls.Signals {
-    public enum LoadingType {
+namespace FallingBalls.Signals
+{
+    public enum LoadingType
+    {
         None,
         Splash
     }

@@ -7,7 +7,7 @@ using Zenject;
 
 namespace FallingBalls.Content
 {
-    public class MenuContent : ContentBase {
-        
+    public class MenuContent : ContentBase
+    {
     }
 }

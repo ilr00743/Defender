@@ -1,22 +1,27 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace FallingBalls.SceneCollection {
+namespace FallingBalls.SceneCollection
+{
     [CreateAssetMenu(fileName = "SceneCollection", menuName = "Scenes/SceneCollection", order = 1)]
-    public class SceneCollection : ScriptableObject, ISceneCollection {
+    public class SceneCollection : ScriptableObject, ISceneCollection
+    {
         [SerializeField] private string _collectionKey;
         [SerializeField] private SceneReference _scene;
         [SerializeField] private string _parentCollectionKey;
-        
-        public string GetSceneName() {
+
+        public string GetSceneName()
+        {
             return _scene;
         }
 
-        public string GetCollectionKey() {
+        public string GetCollectionKey()
+        {
             return _collectionKey;
         }
 
-        public string GetParentCollectionKey() {
+        public string GetParentCollectionKey()
+        {
             return _parentCollectionKey;
         }
     }

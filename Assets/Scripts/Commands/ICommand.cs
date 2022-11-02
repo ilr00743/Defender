@@ -1,5 +1,7 @@
-﻿namespace FallingBalls.Commands {
-    public interface ICommand {
+﻿namespace FallingBalls.Commands
+{
+    public interface ICommand
+    {
         void Execute();
     }
 }

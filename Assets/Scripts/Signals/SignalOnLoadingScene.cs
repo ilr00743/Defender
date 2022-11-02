@@ -1,8 +1,11 @@
-﻿namespace FallingBalls.Signals {
-    public class SignalOnLoadingScene {
+﻿namespace FallingBalls.Signals
+{
+    public class SignalOnLoadingScene
+    {
         public readonly LoadingType LoadingType;
 
-        public SignalOnLoadingScene(LoadingType loadingType) {
+        public SignalOnLoadingScene(LoadingType loadingType)
+        {
             LoadingType = loadingType;
         }
     }

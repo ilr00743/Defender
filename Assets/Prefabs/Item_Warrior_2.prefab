@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8110638514562054184}
   - component: {fileID: 56409028381074196}
   - component: {fileID: 6473047864152857936}
+  - component: {fileID: 4080876027115677552}
   m_Layer: 3
   m_Name: Item_Image
   m_TagString: Untagged
@@ -97,6 +98,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4080876027115677552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248905875074956599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a133ed828cdc0d4792311c28e0a18ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1767723309734539815
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,8 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c084714ca088a664cb099b4b36ef2afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 120
+  _maxSpeed: 120
+  _maxHealth: 80
   _tookDamage: 20
+  _unitAnimation: {fileID: 4080876027115677552}
+  _clickableZone: {fileID: 6741250840435230958}
 --- !u!61 &7732332418296133759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,7 +227,7 @@ GameObject:
   - component: {fileID: 5727628249950812396}
   - component: {fileID: 6741250840435230958}
   m_Layer: 3
-  m_Name: Item_Target
+  m_Name: Item_ClickableZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
