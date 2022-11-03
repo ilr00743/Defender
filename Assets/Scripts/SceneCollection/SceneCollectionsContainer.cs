@@ -6,17 +6,15 @@ namespace FallingBalls.SceneCollection
     public class SceneCollectionsContainer : ScriptableObject
     {
         [SerializeField] private SceneCollection[] _sceneCollections;
-        private SceneCollection _previousCollection;
 
         public bool TryGetValue(string sceneKey, out SceneCollection sceneCollection)
         {
-            sceneCollection = _previousCollection;
+            sceneCollection = null;
             foreach (var collection in _sceneCollections)
             {
                 if (collection.GetCollectionKey().Equals(sceneKey))
                 {
                     sceneCollection = collection;
-                    _previousCollection = collection;
                     return true;
                 }
             }
