@@ -166,9 +166,9 @@ MonoBehaviour:
   _unitAnimation: {fileID: 7047027979378794913}
   _clickableZone: {fileID: 6741250840435230958}
   _unitConfiguration:
-    MaxHealth: 10
-    MaxSpeed: 120
-    TookDamage: 10
+    _maxHealth: 10
+    _tookDamage: 10
+    _maxSpeed: 120
 --- !u!50 &2772731179639210867
 Rigidbody2D:
   serializedVersion: 4
