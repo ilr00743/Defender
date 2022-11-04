@@ -163,11 +163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c084714ca088a664cb099b4b36ef2afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeed: 120
-  _maxHealth: 30
-  _tookDamage: 10
   _unitAnimation: {fileID: 7047027979378794913}
   _clickableZone: {fileID: 6741250840435230958}
+  _unitConfiguration:
+    MaxHealth: 10
+    MaxSpeed: 120
+    TookDamage: 10
 --- !u!50 &2772731179639210867
 Rigidbody2D:
   serializedVersion: 4

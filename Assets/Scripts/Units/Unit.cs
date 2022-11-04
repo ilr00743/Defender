@@ -8,11 +8,9 @@ namespace FallingBalls.Units
 {
     public class Unit : MonoBehaviour, IPointerClickHandler
     {
-        [SerializeField] private int _maxSpeed;
-        [SerializeField] private int _maxHealth;
-        [SerializeField] private int _tookDamage;
         [SerializeField] private UnitAnimation _unitAnimation;
         [SerializeField] private Image _clickableZone;
+        [SerializeField] private UnitConfiguration _unitConfiguration;
         private IObjectPool<Unit> _pool;
         private int _currentSpeed;
         private int _currentHealth;
@@ -67,13 +65,13 @@ namespace FallingBalls.Units
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            TakeDamage(_tookDamage);
+            TakeDamage(_unitConfiguration.TookDamage);
         }
 
         public void ResetProperties()
         {
-            _currentSpeed = _maxSpeed;
-            _currentHealth = _maxHealth;
+            _currentSpeed = _unitConfiguration.MaxSpeed;
+            _currentHealth = _unitConfiguration.MaxHealth;
             _unitAnimation.SetLifeStatus(true);
             _clickableZone.raycastTarget = true;
         }
@@ -95,7 +93,7 @@ namespace FallingBalls.Units
             _currentSpeed = 0;
             _unitAnimation.SetLifeStatus(false);
             _clickableZone.raycastTarget = false;
-            Died?.Invoke(_maxHealth);
+            Died?.Invoke(_unitConfiguration.MaxHealth);
         }
     }
 }

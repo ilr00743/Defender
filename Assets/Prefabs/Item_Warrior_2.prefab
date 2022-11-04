@@ -163,11 +163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c084714ca088a664cb099b4b36ef2afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeed: 120
-  _maxHealth: 80
-  _tookDamage: 20
   _unitAnimation: {fileID: 4080876027115677552}
   _clickableZone: {fileID: 6741250840435230958}
+  _unitConfiguration:
+    Unit: {fileID: 4064125165204379347}
+    MaxHealth: 30
+    MaxSpeed: 120
+    TookDamage: 15
 --- !u!61 &7732332418296133759
 BoxCollider2D:
   m_ObjectHideFlags: 0
